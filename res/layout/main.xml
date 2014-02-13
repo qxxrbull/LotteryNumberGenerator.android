@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainProgramLayout">
+    <TextView android:layout_width="wrap_content"
+        android:layout_alignParentTop="true" android:layout_height="wrap_content"
+        android:id="@+id/LabelMinNumber" android:text="Min Number:"
+        android:layout_alignBaseline="@+id/BoxMinNumber"
+        android:textSize="20sp"></TextView>
+    <EditText android:layout_alignParentRight="true"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/BoxMinNumber" android:width="100px" android:inputType="number"></EditText>
+
+
+    <EditText android:layout_width="wrap_content"
+        android:layout_below="@+id/BoxMinNumber" android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/BoxMinNumber" android:id="@+id/BoxMaxNumber"
+        android:width="100px" android:inputType="number"></EditText>
+    <EditText android:layout_below="@+id/BoxMaxNumber"
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/BoxMaxNumber"
+        android:layout_alignRight="@+id/BoxMaxNumber" android:width="100px"
+        android:id="@+id/BoxHowManyNumbersInGroup" android:inputType="number"></EditText>
+    <EditText android:layout_below="@+id/BoxHowManyNumbersInGroup" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignRight="@+id/BoxHowManyNumbersInGroup" android:id="@+id/BoxNumberOfGroups" android:width="100px" android:inputType="number"></EditText><TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_toLeftOf="@+id/BoxNumberOfGroups" android:layout_alignTop="@+id/BoxNumberOfGroups" android:layout_alignBottom="@+id/BoxNumberOfGroups" android:id="@+id/LabelNumberOfGroups" android:text="Number of groups:" android:textSize="20sp" android:layout_alignBaseline="@+id/BoxNumberOfGroups" android:layout_alignParentLeft="true"></TextView><CheckBox android:layout_below="@+id/LabelNumberOfGroups" android:layout_height="wrap_content" android:layout_centerInParent="true" android:id="@+id/CheckBoxNoRepeatNumbers" android:checked="false" android:text="Repeats Allowed?" android:layout_width="fill_parent"></CheckBox><Button android:layout_below="@+id/CheckBoxNoRepeatNumbers" android:layout_height="wrap_content" android:id="@+id/ButtonGetMyLuckyNumbers" android:text="Get My Lucky Numbers" android:layout_centerInParent="true" android:layout_width="fill_parent"></Button>
+    <ScrollView android:id="@+id/scrollView1" android:layout_below="@+id/ButtonGetMyLuckyNumbers" android:layout_width="fill_parent" android:layout_height="fill_parent" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true">
+        <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="fill_parent" android:focusable="true" android:focusableInTouchMode="true">
+            <TextView android:layout_height="fill_parent" android:gravity="center" android:scrollbarSize="10px" android:scrollbars="vertical" android:id="@+id/PastNumbers" android:layout_width="fill_parent" android:maxLines="500"></TextView>
+        </LinearLayout>
+    </ScrollView>
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_toLeftOf="@+id/BoxHowManyNumbersInGroup" android:layout_alignTop="@+id/BoxHowManyNumbersInGroup" android:text="How many numbers in a group:" android:textSize="20sp" android:id="@+id/LabelHowManyNumbersInAGroup"></TextView><TextView android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/BoxMaxNumber"
+        android:layout_height="wrap_content" android:layout_alignTop="@+id/BoxMaxNumber"
+        android:layout_alignParentLeft="true" android:id="@+id/LabelMaxNumber"
+        android:text="Max Number:" android:layout_alignBaseline="@+id/BoxMaxNumber"
+        android:textSize="20sp"></TextView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
